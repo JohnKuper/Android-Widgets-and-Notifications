@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp"
+                tools:background="@android:color/black"
+    >
+
+    <ImageView
+        android:id="@+id/ivNFIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_snow_day"
+        />
+
+    <TextView
+        android:id="@+id/tvNFTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivNFIcon"
+        android:text="-4\u00b0"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvNFWeatherDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNFTemp"
+        android:layout_toRightOf="@id/ivNFIcon"
+        android:text="LIGHT SNOW"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnNFOpenConfig"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/config_button_selector"
+        android:src="@drawable/ic_settings"
+        />
+
+    <ImageView
+        android:id="@+id/ivNFVerticalDivider"
+        android:layout_width="1dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toLeftOf="@id/btnNFOpenConfig"
+        android:background="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/tvNFCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/ivNFVerticalDivider"
+        android:paddingBottom="4dp"
+        android:paddingTop="8dp"
+        android:text="Izhevsk"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvNFLastUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNFCity"
+        android:layout_toLeftOf="@+id/ivNFVerticalDivider"
+        android:text="updated at 01:44 PM"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        />
+
+</RelativeLayout>

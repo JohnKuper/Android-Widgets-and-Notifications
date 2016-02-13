@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WeatherWidget</string>
+
+    <string name="current_temperature">%1$s\u00b0</string>
+    <string name="forecast_temperature_range">%1$s\u00b0/%2$s\u00b0</string>
+    <string name="current_wind">%1$s m/s</string>
+    <string name="last_update_label">Last update:</string>
+    <string name="last_update_time_notification">updated at %1$s</string>
+
+</resources>
